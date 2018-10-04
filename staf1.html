@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" type="text/css" href="aw.css">
+
+	<!-- Start CSS Slideshow HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End CSS Slider HEAD section -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Page Title</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" media="screen" href="SE.css" />
+   <script src="SE.js"></script>
+</head>
+<body>
+   <!-- time counter -->
+   <p id="demo"></p>
+   <!-- Slide Show -->
+   <section>
+       <img class="mySlides" src="fatema.png"
+       >
+       <img class="mySlides" src="esraa.png"
+       >
+       <img class="mySlides" src="jozaa.png"
+       >
+       <img class="mySlides" src="strongest-one.png"
+       >
+       <img class="mySlides" src="zainab.png"
+       >
+       <img class="mySlides" src="hanan.png"
+       >
+       <img class="mySlides" src="tal.png"
+       >
+       <img class="mySlides" src="sahar.png"
+       >
+       <img class="mySlides" src="kelsy.png"
+       >
+     </section>
+     <script>
+           // Automatic Slideshow - change image every 1.5 seconds
+           var myIndex = 0;
+           carousel();
+
+           function carousel() {
+               var i;
+               var x = document.getElementsByClassName("mySlides");
+               for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+               }
+               myIndex++;
+               if (myIndex > x.length) {myIndex = 1}
+               x[myIndex-1].style.display = "block";
+               setTimeout(carousel, 1500);
+           }
+           </script>
+</body>
+
+</html>

@@ -1,3 +1,85 @@
+body  {
+    background-image: url("paper.gif");
+    background-color: #778899;
+	
+}
+
+.li{
+	display: inline-block;
+	padding: 10px 25px;
+	margin-bottom: 30px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: black;
+	background-color: #4ca50;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 5px #999;
+	transition-duration: 0.1s
+}
+
+
+
+/*
+#ul:hover{
+	background-color: red;
+	color: white;
+	transform:translateY(4px)
+	
+}
+*/
+
+.li:active{
+background-color: #3e8341;
+	box-shadow: 1 4px #666;
+	
+}
+
+/*
+body{background:blue;
+color:#0ff}
+*/
+
+.menu{
+	width:100%;
+      background-color:#1abc9c;
+      height:60px
+}
+.menu >#logo{
+	float:left;
+  	font :2em"openTangerine",Tangerine;
+ 	height:30px;
+	padding:15px 30px ;
+	line-height:30px;
+	color: aliceblue	
+}
+
+.menu>ul{
+	margin:15px 20px;
+    padding:0;
+    float:right;
+    list-style-type:none;
+}
+.menu>ul>li{
+	float:left;
+    padding;
+	
+} 
+.menu-item {
+	        displye:inline-block;
+            padding:15px 20px ;
+            line-height:30px;
+            height:30px;
+            text-decoration:none
+}
+
+.menu-item:hover{
+	background-color:#ff0055
+}
+
 hr{
 	height: 10px;
 	background-color: black;
@@ -27,9 +109,50 @@ border-radius: 70px;
 height: 150px
 }
 
+/*this is for all iframe windows*/
 iframe{
 	width: 100%;
 height: 500px
 }
+
+
+/*this for survey list*/
+#ul{
+	background-color: #FFB6C1;
+	color: #333;
+	border-radius:5% 
+
+}
+/*this for button*/
+#btn{
+	background-color: #333;
+	border-radius:25% ;
+	color: #FFB6C1;
+	font-size: 18px
+
+}
+
+/*this is for black box*/
+.row{
+	background-color: black;
+	height: 150px;
+	width: 100%;
+	border-radius: 20%
+		
+		
+}
+
+
+.mySlides{
+	border-radius: 25%;
+	width:20%;
+	height:20% 
+}
+
+
+
+
+
+
 
 

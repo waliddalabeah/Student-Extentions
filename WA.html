@@ -7,43 +7,88 @@
     <script src="data_generator.js"></script>
   </head>
   <link rel="stylesheet" type="text/css" href="aw.css">
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
   <body>
-   
- 
+   <nav class="menu">
+      <div id="logo">students Extention</div>
+	  
+      <ul>
+        <li><a class="menu-item" href="">Home</a>
+		  </li>
+        <li><a class="menu-item" href="https://rbk.org/
+">contact</a>
+		  </li>
+        <li><a class="menu-item" href="staf1">staf</a>
+		  </li>
+		  <li><a class="menu-item" href="staf1">students</a>
+		  </li>
+      </ul>
+      
+    </nav>
+ <div id="asd"></div>
 <div id="ad">
-
-  <!-- <iframe width="560" height="315" src="https://slack.com/" name="yout"></iframe> -->
- <iframe id="motional" width="560" height="315" src="https://rbkemotional.herokuapp.com/" name="yout"></iframe>
+<p id="demo"></p>
+   <iframe id="motional" width="560" height="315" src="https://rbkemotional.herokuapp.com/" name="yout"></iframe>
 <iframe id="tomat" width="560" height="315" src="https://tomato-timer.com/#" name="yout"></iframe>
 <iframe id="s13" width="560" height="315" src="http://rbkprepcohort5.herokuapp.com/" name="yout"></iframe>
 
 
-
+	
 </div>
+<center> <div class="row">
+	
+      <div class="col-xs-4">
 
-<div id="im">
   <a href="http://rbkprepcohort5.herokuapp.com/"><img id="rbk" src="rbk.png" alt="Trulli" width="250" height="140"></a>
   
 <a href="https://slack.com/signin"><img id="slack" src="https://www.cbronline.com/wp-content/uploads/2016/07/what-is-slack.png" alt="Trulli" width="260" height="140"></a>
 
 <img id="tomato" src="https://www.macupdate.com/images/icons256/58631.png" alt="Trulli" width="260" height="140">
 
-<img id="emotion" src="https://www.psychologicalscience.org/redesign/wp-content/uploads/2018/04/PAFF_040918_emotionspectrum2-609x419.jpg" alt="Trulli" width="260" height="140">
+<img id="emotion" src="images.png" alt="Trulli" width="260" height="140">
+	
 </div>
+<center>
+   <!-- Slide Show -->
+   <section>
+       <img class="mySlides" src="fatema.png"
+       style="width:20%">
+       <img class="mySlides" src="esraa.png"
+       style="width:20%">
+       <img class="mySlides" src="jozaa.png"
+       style="width:20%">
+       <img class="mySlides" src="strongest-one.png"
+       style="width:20%">
+       <img class="mySlides" src="zainab.png"
+       style="width:20%">
+       <img class="mySlides" src="hanan.png"
+       style="width:20%">
+       <img class="mySlides" src="tal.png"
+       style="width:20%">
+       <img class="mySlides" src="sahar.png"
+       style="width:20%">
+       <img class="mySlides" src="kelsy.png"
+       style="width:20%">
+	   
 
-<div>
+     </section></center>
+	
+	
+<div id="lis">
 
 <hr>
-  <button id="btn">survey</button>
+	<center><button id="btn">survey</button>
   <ul id="ul">
-    <li id="s1">LECTURE SURVEY</li>
-    <li id="s2">Prep Sprint Reflection</li>
-    <li id="s3">Extra love session</li>
-    <li id="s4">Anonymous Suggestions/ Survey</li>
-    <li id="s5">After Challenge Survey</li>
+    <li class="li" id="s1">LECTURE SURVEY</li>
+    <li class="li" id="s2">Prep Sprint Reflection</li>
+    <li class="li" id="s3">Extra love session</li>
+    <li class="li" id="s4">Anonymous Suggestions/ Survey</li>
+    <li class="li" id="s5">After Challenge Survey</li>
 
   </ul>
-
+</center>
+  
 <iframe id="s1" width="560" height="315" src="https://goo.gl/forms/BxaJP4OoWNA8aL082" name="yout">
   
 </iframe>
@@ -60,84 +105,39 @@
 
 </div> 
 
-
-<div id="show"></div>
-
-    <script>
-
-$("iframe").hide();
-$("ul#ul").hide();
-
-$("img#tomato").click(function(){
-$("iframe#tomat").toggle();
-$("iframe#motional").hide();
-
-         });
-$("img#emotion").click(function(){
-$("iframe#motional").toggle();
-$("iframe#tomat").hide();
+	
+<!--<div id="show"></div>-->
 
 
-         });
+     <script>
+           // Automatic Slideshow - change image every 1.5 seconds
+           var myIndex = 0;
+           carousel();
 
-  $("button#btn").click(function(){
-$("ul").toggle();
-$("iframe").hide()
-
-// $("ul").hide();
-
-         });
-  $("li#s1").click(function(){
-$("iframe#s1").toggle();
-$("iframe#s2").hide()
-$("iframe#s3").hide()
-$("iframe#s4").hide()
-$("iframe#s5").hide()
-
-         });
-  $("li#s2").click(function(){
-$("iframe#s2").toggle();
-$("iframe#s1").hide()
-$("iframe#s3").hide()
-$("iframe#s4").hide()
-$("iframe#s5").hide()
-         });
-         $("li#s3").click(function(){
-$("iframe#s3").toggle();
-$("iframe#s1").hide()
-$("iframe#s2").hide()
-$("iframe#s4").hide()
-$("iframe#s5").hide()
-         });
-         $("li#s4").click(function(){
-$("iframe#s4").toggle();
-$("iframe#s1").hide()
-$("iframe#s2").hide()
-$("iframe#s3").hide()
-$("iframe#s5").hide()
-         });
-         $("li#s5").click(function(){
-$("iframe#s5").toggle();
-$("iframe#s1").hide()
-$("iframe#s2").hide()
-$("iframe#s3").hide()
-$("iframe#s4").hide()
-         });
-
-   
-  
-
-
-
-
-
+           function carousel() {
+               var i;
+               var x = document.getElementsByClassName("mySlides");
+               for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+               }
+               myIndex++;
+               if (myIndex > x.length) {myIndex = 1}
+               x[myIndex-1].style.display = "block";
+               setTimeout(carousel, 1500);
+           }
+		 
+		 
+		 
+		 
+           </script>	
+	
+	
+	
+	
 
 
    
-
-</script>
-
-   
+  <script type="text/javascript" src="akram.js"></script>
 
   </body>
 </html>
