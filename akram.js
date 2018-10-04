@@ -1,18 +1,19 @@
 $("iframe").hide();
 $("ul#ul").hide();
-
+//this for tomato show it and hide the other
 $("img#tomato").click(function(){
 $("iframe#tomat").toggle();
 $("iframe#motional").hide();
 
          });
+//this for emotion show it and hide the other
 $("img#emotion").click(function(){
 $("iframe#motional").toggle();
 $("iframe#tomat").hide();
 
 
          });
-
+//this it will show and hid the list
   $("button#btn").click(function(){
 $("ul#ul").toggle();
 $("iframe").hide()
@@ -20,6 +21,7 @@ $("iframe").hide()
 // $("ul").hide();
 
          });
+//show iframe survey
   $("li#s1").click(function(){
 $("iframe#s1").toggle();
 $("iframe#s2").hide()
@@ -49,6 +51,7 @@ $("iframe#s2").hide()
 $("iframe#s3").hide()
 $("iframe#s5").hide()
          });
+//this for lecture survey show it and hide the other
          $("li#s5").click(function(){
 $("iframe#s5").toggle();
 $("iframe#s1").hide()
@@ -57,7 +60,7 @@ $("iframe#s3").hide()
 $("iframe#s4").hide()
          });
 
- // Automatic Slideshow - change image every 1.5 seconds
+ // Automatic Slideshow - change image every 3 seconds
            var myIndex = 0;
            carousel();
 
@@ -70,7 +73,7 @@ $("iframe#s4").hide()
                myIndex++;
                if (myIndex > x.length) {myIndex = 1}
                x[myIndex-1].style.display = "block";
-               setTimeout(carousel, 1500);
+               setTimeout(carousel, 3000);
            }
 
 /////// counter watch//////////////////////////////////////
